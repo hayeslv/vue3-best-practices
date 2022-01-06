@@ -1,4 +1,6 @@
 import { ref, inject } from "vue";
+import RouterLink from './RouterLink.vue';
+import RouterView from './RouterView.vue';
 
 const ROUTER_KEY = '__router__';
 
@@ -32,6 +34,8 @@ class Router {
   }
   install(app) {
     app.provide(ROUTER_KEY, this);
+    app.component('router-link', RouterLink);
+    app.component('router-view', RouterView);
   }
 }
 
