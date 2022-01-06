@@ -4,7 +4,7 @@
 
 <script setup>
 import { computed } from 'vue';
-import { useStore } from '../store/mini_vuex';
+import { useStore } from 'vuex';
 
 let store = useStore();
 let count = computed(() => store.state.count);
