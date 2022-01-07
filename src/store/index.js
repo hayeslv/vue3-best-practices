@@ -20,6 +20,7 @@ const store = createStore({
     }
   },
   actions: {
+    // store.dispatch('asyncAdd')
     asyncAdd({ commit }) {
       setTimeout(() => {
         commit('add');
