@@ -1,5 +1,6 @@
 <template>
   <button @click="toggle">click</button>
+  <Heading level="5">hahah</Heading>
   <transition name="fade">
     <h1 v-if="showTitle">你好vue3</h1>
   </transition>
@@ -7,6 +8,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import Heading from '../components/test/Heading'
 
 let showTitle = ref(true);
 function toggle() {

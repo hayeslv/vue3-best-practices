@@ -28,7 +28,7 @@
 
 <script setup>
 import { computed, ref, watchEffect } from 'vue';
-import { useStorage } from '../utils/storage';
+import { useStorage } from '../../../utils/storage';
 
 let { title, todos, showModal, addTodo, clear, active, all, allDone } = useTodos();
 
