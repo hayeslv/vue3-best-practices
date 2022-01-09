@@ -1,18 +1,9 @@
 <template>
-  <div @click="add">{{count}}</div>
+  <TodoList/>
 </template>
 
 <script setup>
-import { computed } from 'vue';
-import { useStore } from 'vuex';
-
-let store = useStore();
-let count = computed(() => store.state.count);
-
-function add() {
-  store.commit('add');
-}
-
+import TodoList from '../components/test/TodoList.jsx'
 </script>
 
 <style>

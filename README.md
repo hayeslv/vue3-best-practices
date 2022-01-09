@@ -24,3 +24,16 @@ export default defineConfig({
 })
 ```
 
+3、eslint
+
+```bash
+npm i eslint -D
+```
+
+安装完成后，在根目录下执行
+
+```bash
+npx eslint --init
+```
+
+然后，我们在命令行中执行 npx eslint src，接着你就会看到报错信息
